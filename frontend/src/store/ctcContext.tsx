@@ -28,7 +28,7 @@ const CtcContext = createContext<ctcContextType | null>(null)
 
 export const CtcProvider = ({ children }: { children: ReactNode }) => {
   const [ctc, setCtc] = useState<number>(0)
-  const [isMonthly, setIsMonthly] = useState<boolean>(true)
+  const [isMonthly, setIsMonthly] = useState<boolean>(false)
   const [visibility, setVisibility] = useState<boolean>(false)
   const [isEpfApplicable, setEpfApplicable] = useState<boolean>(true)
   const [isPtApplicable, setPtApplicable] = useState<boolean>(true)

@@ -42,13 +42,14 @@ const CTCInput: FC = () => {
             name="ctc"
             value={formattedPrice(ctc)}
             onChange={handleInputChange}
+            placeholder=''
           />
           <span className="text-xs sm:text-sm text-gray-400 whitespace-nowrap">
             {isMonthly ? "monthly" : "yearly"}
           </span>
         </div>
         <p className="text-xs sm:text-sm text-gray-500 mt-1">
-          Enter your {isMonthly ? "monthly" : "yearly"} Cost to Company (CTC) in INR
+          Enter your {isMonthly ? "monthly" : "yearly"} Cost to Company (CTC) in Indian Rupees
         </p>
       </div>
 
